@@ -1,0 +1,115 @@
+@mixin adjustSize($width,$height){
+    width: $width;
+    height: $height;
+}
+@mixin adjustPosition($display,$justifyContent,$alignItems,$position){
+    display: $display;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    position: $position;
+}
+ $positioncenter :center;
+ .slideStyle{
+  @include adjustSize(100%,100% );
+  background-position: $positioncenter;
+}
+.icon-react{
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    margin-bottom: 8px;
+}
+.slide-image {
+    @include adjustSize(100%, 100%);
+    @include adjustPosition(flex,center ,center , relative);
+    background-size: contain;
+    background:no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: $positioncenter;
+}
+.shop-button {
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.shop-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.button-container {
+    @include adjustPosition(flex, center, center, absolute);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    margin-top: 20px;
+}
+.button-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px;
+    border-left: 1px solid white;
+    
+}
+.dots-slice {
+ @include adjustPosition(flex, center, center, absolute);
+ bottom: 40px;
+ left: 50%;
+ transform: translateX(-50%);
+ margin: 10px 0;
+}
+
+.dot {
+    @include adjustSize(10px, 10px);
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #171616;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dotClicked {
+    background-color: #f2f2f2;
+    
+}
+.logo{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    margin-top: 20px;
+}
+.logos{
+    font-family: 'Climate Crisis', cursive;
+    color: #f2f2f2;
+    font-weight: 800;
+    font-size: 25px;
+   
+}
+.Menu{
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    right: 10%;
+    margin-top: 20px;
+}
+.Menu div{
+    color: #ffffff;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.divseparate{
+    border-right: 1px solid white;
+}
