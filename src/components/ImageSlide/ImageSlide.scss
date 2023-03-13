@@ -8,6 +8,11 @@
     align-items: $alignItems;
     position: $position;
 }
+@mixin adjustItemsWithoutPosition($display,$justifyContent,$alignItems){
+    display: $display;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
  $positioncenter :center;
  .slideStyle{
   @include adjustSize(100%,100% );

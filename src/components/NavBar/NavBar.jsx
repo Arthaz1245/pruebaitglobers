@@ -1,7 +1,8 @@
 import { GiShoppingCart } from "react-icons/gi";
 import { Link } from "react-router-dom";
+
 import "./NavBar.scss";
-const navbar = () => {
+const Navbar = () => {
   return (
     <nav className="nav-bar">
       <Link to="/">
@@ -24,4 +25,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;
