@@ -1,8 +1,9 @@
 import { GiShoppingCart } from "react-icons/gi";
 import { Link } from "react-router-dom";
-
+import { useSelector } from "react-redux";
 import "./NavBar.scss";
 const Navbar = () => {
+  const { cartTotalQuantity } = useSelector((state) => state.cart);
   return (
     <nav className="nav-bar">
       <Link to="/">
@@ -17,7 +18,7 @@ const Navbar = () => {
         <div className="nav-cart">
           <GiShoppingCart />
           <div className="cart-quantity">
-            <span>0</span>
+            <span>{cartTotalQuantity}</span>
           </div>
         </div>
       </Link>
