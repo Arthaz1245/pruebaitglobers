@@ -1,0 +1,57 @@
+@import '../ImageSlide//ImageSlide.scss';
+
+.Pictures {
+    @include adjustSize(100%, 700px);
+    border: 1px solid rgb(255, 255, 255);
+    @include adjustPosition(flex, center, center, relative);
+     margin-top: 20px;
+    flex-direction: column;
+}
+.squarepictures{
+    margin: 10px;
+    @include adjustSize(50%, 70%);
+    position: relative;
+    flex-direction: column;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.titles{
+    position: relative;
+    top: 20px;
+}
+.titles h3{
+    color: rgb(76, 77, 76);
+}
+
+.firstrow, .secondrow{
+    border: 1px solid rgb(255, 255, 255);
+    @include adjustSize(100%, 50%);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+ .div1, .div2, .div3, .div4,.div5{
+    position: relative;
+    @include adjustSize(33%, 100%);
+    border: 1px solid rgb(255, 255, 255);
+}
+.div3,
+.div6{
+@include adjustSize(34%, 100%);
+position: relative;
+border: 1px solid rgb(255, 255, 255);
+}
+.div1 img,.div2 img,.div3 img,.div4 img,.div5 img,.div6 img{
+        @include adjustSize(100%, 100%);
+        background-size: contain;
+        background: no-repeat center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-position: $positioncenter;
+}
+.form{
+    margin: 10px;
+}
+

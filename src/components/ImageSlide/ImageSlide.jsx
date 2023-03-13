@@ -30,19 +30,19 @@ const ImageSlide = ({ slides }) => {
         <div className="button-container">
           <div>
             <IoIosWoman className="icon-react" />
-            <span>Women</span>
+            <a href="#women-section">Women</a>
           </div>
           <div>
             <IoMdMan className="icon-react" />
-            <span>Men</span>
+            <a href="#men-section">Men</a>
           </div>
           <div>
             <GiMonclerJacket className="icon-react" />
-            <span>Winter</span>
+            <a href="#winter-section">Winter</a>
           </div>
           <div>
             <MdOutlineSportsTennis className="icon-react" />
-            <span>Sports</span>
+            <a href="#sport-section">Sports</a>
           </div>
         </div>
         <div className="Menu">

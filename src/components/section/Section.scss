@@ -1,7 +1,6 @@
 @import "../ImageSlide/ImageSlide.scss";
 .firstSection {
     @include adjustSize(100%, 500px);
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
 }
@@ -9,7 +8,6 @@
 .sectionImg {
     position: relative;
     width: 50%;
-    border-right: 1px solid red;
 }
 
 .sectionImg img {
@@ -28,7 +26,7 @@
 .imgpng{
     @include adjustSize(30%, 40%);
    position: relative;
-   border: 1px solid salmon;
+   
 }
 .imgpng img{
     @include adjustSize(100%, 100%);

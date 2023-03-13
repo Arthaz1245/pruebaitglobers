@@ -12,8 +12,12 @@ import pnghat from "../../assets/imgs/pnghat.png";
 import pngsport from "../../assets/imgs/pngsport.png";
 import pngman from "../../assets/imgs/pngman.png";
 import pngwomen from "../../assets/imgs/pngwomen.png";
+import { BsFacebook, BsTwitter } from "react-icons/bs";
+import { ImInstagram } from "react-icons/im";
 import "./Home.scss";
 import Section from "../section/section";
+import CollagePictures from "../CollagePictures/CollagePictures";
+import Footer from "../Footer/Footer";
 function Home() {
   const slides = [
     { url: hombreCarrusel, title: "hombreCarrusel" },
@@ -30,24 +34,28 @@ function Home() {
   const sectionTextImg = [
     {
       url: pngwomen,
+      id: "women-section",
       title: "CONFY WOMEN",
       description:
         "You will find unique collections for women. One of the latest trending for empowered women",
     },
     {
       url: pngman,
+      id: "men-section",
       title: "CONFY MEN",
       description:
         "You will find the best clothes for men. One of the best collections so far",
     },
     {
       url: pnghat,
+      id: "winter-section",
       title: "CONFY WINTER",
       description:
         "You will find unique collections for women. One of the latest trending for empowered women",
     },
     {
       url: pngsport,
+      id: "sport-section",
       title: "CONFY SPORT",
       description:
         "Te best clothes to get ready to workout. Don't miss this out",
@@ -60,6 +68,7 @@ function Home() {
       </div>
       <div className="secondpart">
         <Section
+          id={sectionTextImg[0].id}
           imgBackground={womansection}
           number={11}
           imgurl={sectionTextImg[0].url}
@@ -67,6 +76,7 @@ function Home() {
           description={sectionTextImg[0].description}
         />
         <Section
+          id={sectionTextImg[1].id}
           imgBackground={menseccion}
           number={20}
           imgurl={sectionTextImg[1].url}
@@ -74,6 +84,7 @@ function Home() {
           description={sectionTextImg[1].description}
         />
         <Section
+          id={sectionTextImg[2].id}
           imgBackground={sesionwinter}
           number={11}
           imgurl={sectionTextImg[2].url}
@@ -81,6 +92,7 @@ function Home() {
           description={sectionTextImg[2].description}
         />
         <Section
+          id={sectionTextImg[3].id}
           imgBackground={deportistasection}
           number={20}
           imgurl={sectionTextImg[3].url}
@@ -88,6 +100,44 @@ function Home() {
           description={sectionTextImg[3].description}
         />
       </div>
+      <div className="separatordiv">
+        <CollagePictures />
+      </div>
+      <footer className="footer">
+        <div>
+          <span className="logosblack">Confy</span>
+        </div>
+        <div>
+          <ul>
+            <li>CONFY MEN</li>
+            <li>CONFY WOMEN</li>
+            <li>CONFY WINTER</li>
+            <li>CONFY SPORT</li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li>CONTACT US</li>
+            <li>HELP</li>
+            <li>HOW TO BUY</li>
+            <li>TERMS AND CONDITIONS</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <BsFacebook />
+            </li>
+            <li>
+              <BsTwitter />
+            </li>
+            <li>
+              <ImInstagram />
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
   );
 }

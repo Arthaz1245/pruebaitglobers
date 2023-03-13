@@ -1,8 +1,8 @@
 import React from "react";
 import "./Section.scss";
-const section = ({ imgBackground, number, imgurl, title, description }) => {
+const section = ({ imgBackground, number, imgurl, title, description, id }) => {
   return (
-    <section>
+    <section id={id}>
       {number % 2 !== 0 ? (
         <div className="firstSection">
           <div className="sectionImg">
@@ -14,6 +14,7 @@ const section = ({ imgBackground, number, imgurl, title, description }) => {
             </div>
             <h2>{title}</h2>
             <p>{description}</p>
+            <p>{`> MORE INFO`}</p>
           </div>
         </div>
       ) : (
@@ -24,6 +25,7 @@ const section = ({ imgBackground, number, imgurl, title, description }) => {
             </div>
             <h2>{title}</h2>
             <p>{description}</p>
+            <p>{`> MORE INFO`}</p>
           </div>
           <div className="sectionImg">
             <img src={imgBackground} alt="" />
