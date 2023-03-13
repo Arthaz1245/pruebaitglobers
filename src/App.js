@@ -1,6 +1,7 @@
 import Home from "./components/Home/Home";
 import Cart from "./components/Cart/Cart";
 import NavBar from "./components/NavBar/NavBar";
+import Shop from "./components/Shop/Shop";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import NotFound from "./components/NotFound/NotFound";
 
@@ -11,14 +12,8 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route
-            path="/cart"
-            element={
-              <NavBar>
-                <Cart />
-              </NavBar>
-            }
-          />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="/not-found" element={<NotFound />} />
           <Route path="/*" element={<Navigate to="/not-found" />} />
         </Routes>
