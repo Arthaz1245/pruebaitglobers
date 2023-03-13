@@ -12,8 +12,6 @@ import pnghat from "../../assets/imgs/pnghat.png";
 import pngsport from "../../assets/imgs/pngsport.png";
 import pngman from "../../assets/imgs/pngman.png";
 import pngwomen from "../../assets/imgs/pngwomen.png";
-import { BsFacebook, BsTwitter } from "react-icons/bs";
-import { ImInstagram } from "react-icons/im";
 import "./Home.scss";
 import Section from "../section/section";
 import CollagePictures from "../CollagePictures/CollagePictures";
@@ -28,7 +26,7 @@ function Home() {
   ];
   const containerStyles = {
     width: "100%",
-    height: "540px",
+    height: "650px",
     margin: "0 auto",
   };
   const sectionTextImg = [
@@ -103,41 +101,7 @@ function Home() {
       <div className="separatordiv">
         <CollagePictures />
       </div>
-      <footer className="footer">
-        <div>
-          <span className="logosblack">Confy</span>
-        </div>
-        <div>
-          <ul>
-            <li>CONFY MEN</li>
-            <li>CONFY WOMEN</li>
-            <li>CONFY WINTER</li>
-            <li>CONFY SPORT</li>
-          </ul>
-        </div>
-
-        <div>
-          <ul>
-            <li>CONTACT US</li>
-            <li>HELP</li>
-            <li>HOW TO BUY</li>
-            <li>TERMS AND CONDITIONS</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>
-              <BsFacebook />
-            </li>
-            <li>
-              <BsTwitter />
-            </li>
-            <li>
-              <ImInstagram />
-            </li>
-          </ul>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

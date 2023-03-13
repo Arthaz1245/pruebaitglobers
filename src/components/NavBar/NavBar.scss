@@ -1,0 +1,29 @@
+.nav-bar {
+    height: 70px;
+    background-color: #282A35;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+.nav-cart{
+    display: flex;
+    align-items: center;
+}
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+.cart-quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    background: rgba(255, 251, 251, 0.744);
+    border-radius: 50%;
+    font-size: 14px;
+    margin-left: 5px;
+    color: black;
+}

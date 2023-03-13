@@ -5,14 +5,14 @@
     margin-top: 2rem;
 
     input[type="email"] {
-        width: 100%;
-        padding: 0.5rem;
-        margin-right:2rem;
-        border-radius: 0.25rem;
-        border: 1px solid #ccc;
-        font-size: 1rem;
-        color: #333;
-        outline: none;
+           width: 100%;
+            padding: 0.5rem;
+            margin-right: 2rem;
+            border-radius: 0.25rem;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+            color: #333;
+            outline: none;
     }
 
     button[type="submit"] {
@@ -33,4 +33,8 @@
             cursor: not-allowed;
         }
     }
+}
+.arrow {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
 }

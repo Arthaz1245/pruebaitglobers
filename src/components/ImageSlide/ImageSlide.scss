@@ -20,13 +20,17 @@
 }
 .slide-image {
     @include adjustSize(100%, 100%);
-    @include adjustPosition(flex,center ,center , relative);
+    @include adjustPosition(flex,center ,center , absolute);
     background-size: contain;
     background:no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: $positioncenter;
+    position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
 }
 .shop-button {
     display: inline-block;

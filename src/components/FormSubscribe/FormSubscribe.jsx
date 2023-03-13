@@ -15,7 +15,7 @@ function ContactForm() {
       />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
       <button type="submit" disabled={state.submitting}>
-        Submit
+        <span class="arrow">→</span>
       </button>
     </form>
   );
