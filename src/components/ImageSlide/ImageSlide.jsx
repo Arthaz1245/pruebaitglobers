@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { IoIosWoman, IoMdMan } from "react-icons/io";
 import { GiMonclerJacket } from "react-icons/gi";
 import { MdOutlineSportsTennis } from "react-icons/md";
+import { Link } from "react-router-dom";
 import "./ImageSlide.scss";
 <style>
   @import
@@ -53,9 +54,11 @@ const ImageSlide = ({ slides }) => {
             <span>My purchases</span>
           </div>
         </div>
-        <a href="#" className="shop-button">
-          Shop Now
-        </a>
+        <Link to="/shop">
+          <span href="#" className="shop-button">
+            Shop Now
+          </span>
+        </Link>
 
         <div className="dots-slice">
           {slides.map((slide, i) => (

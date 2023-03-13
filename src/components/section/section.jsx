@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Section.scss";
 const section = ({ imgBackground, number, imgurl, title, description, id }) => {
   return (
@@ -14,7 +15,9 @@ const section = ({ imgBackground, number, imgurl, title, description, id }) => {
             </div>
             <h2>{title}</h2>
             <p>{description}</p>
-            <p>{`> MORE INFO`}</p>
+            <Link to="/shop">
+              <p style={{ color: "black" }}>{`> MORE INFO`}</p>
+            </Link>
           </div>
         </div>
       ) : (
@@ -24,8 +27,10 @@ const section = ({ imgBackground, number, imgurl, title, description, id }) => {
               <img src={imgurl} alt="" />
             </div>
             <h2>{title}</h2>
-            <p>{description}</p>
-            <p>{`> MORE INFO`}</p>
+            <p style={{ color: "black" }}>{description}</p>
+            <Link to="/shop">
+              <p>{`> MORE INFO`}</p>
+            </Link>
           </div>
           <div className="sectionImg">
             <img src={imgBackground} alt="" />

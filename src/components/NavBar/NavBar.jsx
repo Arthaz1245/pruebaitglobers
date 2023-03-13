@@ -7,6 +7,11 @@ const navbar = () => {
       <Link to="/">
         <h1 style={{ textDecoration: "none" }}>Confy</h1>
       </Link>
+      <div className="link-store">
+        <Link to="/shop">
+          <h1>Shop</h1>
+        </Link>
+      </div>
       <Link to="/cart">
         <div className="nav-cart">
           <GiShoppingCart />
